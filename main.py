@@ -1,6 +1,14 @@
+#Viewing Libraries
+# Docs: PyMuPDF | Audio/Video: MoviePy | Image: Pillow | Compressed/Install: Display the name
+
+
 import os
 import collections
 from pprint import pprint
+import PyMuPDF
+import MoviePy
+import Pillow
+
 
 
 audio = ['mp3', 'wav', 'raw', 'wma', 'mid', 'midi']
@@ -53,3 +61,4 @@ for f_ext, f_list in files_mapping.items():
     elif f_ext in compressed:
         for file in f_list:
             os.rename(os.path.join(DOWNLOADS_PATH, file), os.path.join(BASE_PATH, 'Other', file))
+
